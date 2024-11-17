@@ -1,0 +1,35 @@
+.div21{
+    border-radius: 13px;
+    box-shadow: 10px 10px  rgba(240, 185, 7, 0.4);
+    font-size: 30px;
+    margin: 40px;
+    margin-left: 60px;
+    float: left;
+    height: 50%;
+    width: 45%;border: 2px rgba(224, 116, 15, 0.774);
+    background-color:rgba(224, 116, 15, 0.774);
+    color: black;
+    position: absolute;
+    text-align: center;
+}
+
+.div22{
+    background-image: url(siting2.jfif);
+    border-radius: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 346px;
+    width: 40%;
+    margin: 40px;
+    margin-left: 60px;
+    float: right;
+    text-align: center;}
+.div23{
+        font-size: 20px;
+        margin: 0px;
+        margin-left: 410px;
+        float: left;
+        padding: 40px;
+        height: 470%;
+        width: 45%;} 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 650px;
+            background-color:rgba(249, 145, 47, 1);;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 13px;
+            box-shadow: 10px 10px   rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px ;
+            border-radius: 4px;
+            border: 2px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(250, 145, 24, 0.774);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:rgba(249, 145, 47, 1);
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h1>Login</h1>
+    <label for="username">Username<span style="color: red;" class="required">*</span>: </label>
+    <input type="text" id="username" placeholder="Enter username" name="username" required>
+    <label for="password">Password<span style="color: red;" class="required">*</span>: </label>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Login</button>
+</div>
+
+<script>
+    function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        var correctUsername = "hiteshi";
+        var correctPassword = "59";
+
+        if (username === correctUsername && password === correctPassword)
+         {alert("Login Successfully");}
+         else if (username === "")
+         { alert("Username is required.");}
+         else if (password === "")
+         {alert("Password is required");}
+        else {
+             alert("Incorrect username or password");}
+             
+    }
+</script>
+</body>
+</html>
